@@ -32,7 +32,7 @@ a {
 .top-part,
 .onlinegame,
 .game-category {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -310,7 +310,7 @@ a {
     margin: 0 auto;
 }
 
-.footer-icon,
+.footer-icon
 {
 display: grid;
 grid-template-columns: repeat(6, 1fr);
@@ -431,7 +431,7 @@ margin: 0 auto;
 
 }
 
-@media screen and (max-width:992px) {
+@media screen and (min-width:577) and (max-width:992px) {
 
     .navbar,
     .menubar>ul,
