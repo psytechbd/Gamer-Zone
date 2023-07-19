@@ -434,6 +434,9 @@ a {
         grid-template-columns: repeat(3, 1fr);
         font-size: 12px;
     }
+    .text-right{
+        text-align: center;
+    }
 
 }
 
