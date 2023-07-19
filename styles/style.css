@@ -25,7 +25,7 @@
 }
 
 .top-part {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -42,9 +42,14 @@
     -webkit-text-fill-color: transparent;
     font-size: 95px;
 }
+.title{
+    color: #0B0223;
+    font-size: 48px;
+}
 .description{
     color: #534C64;
     line-height: 2rem;
+    margin-bottom: 20px;
 }
 .btn-primery{
     background: var(--primary-color);
@@ -71,7 +76,7 @@
 /* Navbar styles */
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 0;
 }
@@ -124,11 +129,63 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 
 .banner-image img {
     width: 100%;
+}
+
+/* Game card styles */
+.onlinegame{
+    text-align: center;
+    margin: 100px auto;
+}
+.game-card{
+    width: 340px;
+    position: relative;
+}
+
+.games{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+.hover-link{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 395px;
+    width: 340px;
+    border-radius: 16px;
+    border: 3px solid var(--primary-color);
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.631);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.game-card:hover .hover-link{
+   opacity: 1;
+   
+}
+
+.game-card:hover .game-card > img{
+    
+ }
+
+.fa-play{
+    background: white;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.hover-text{
+    color: var(--primary-color);
+    margin-top: 10px;
 }
 
 /* Media query */
@@ -136,17 +193,28 @@
 
     .navbar,
     .menubar>ul,
-    .banner {
+    .banner,
+    .games {
         flex-direction: column;
-        padding: 20px;
-
     }
     .banner{
         flex-direction: column-reverse;
         text-align: center;
     }
-    .banner-image img {
+    .banner-image >  img {
        margin-bottom: 50px;  
     }
+    .game-card{
+        text-align: center;
+        width: 100%;
+    }
+    .hover-link{
+      margin: 0 auto;
+    }
+    .description,
+    .banner{
+        padding: 20px;
+    }
+
 
 }
