@@ -1,4 +1,74 @@
+/* Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+
+/* Font awesome  */
+.fa-youtube{
+    color:red;
+}
+.fa-brands{
+    font-size: 20px;
+    margin: 5px 10px;
+}
+/* Color variables */
+:root {
+    --primary-color: #ff42a5;
+    --secondary-color: #4EC5F7;
+}
+
+/* Common styles */
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo-text {
+    font-size: 45px;
+}
+
+.logo-text>span {
+    color: var(--primary-color);
+}
+
+.menubar>ul {
+    display: flex;
+    align-items: center;
+}
+
+.menubar>ul>li {
+    list-style: none;
+    font-size: 18px;
+    margin: 50px 0;
+    margin-right: 30px;
+}
+
+.btn-menu {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    height: 56px;
+    width: 262px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+
 }
