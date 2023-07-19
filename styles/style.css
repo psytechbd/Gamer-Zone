@@ -431,7 +431,7 @@ margin: 0 auto;
 
 }
 
-@media screen and (min-width:577) and (max-width:992px) {
+@media screen and (min-width:577px) and (max-width:992px) {
 
     .navbar,
     .menubar>ul,
