@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
 
 /* Font awesome  */
-.fa-youtube{
-    color:red;
+.fa-youtube {
+    color: red;
 }
-.fa-brands{
+
+.fa-brands {
     font-size: 20px;
     margin: 5px 10px;
 }
+
 /* Color variables */
 :root {
     --primary-color: #ff42a5;
@@ -22,11 +24,56 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.top-part {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    color: #0B0223;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.main-title {
+
+    background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 95px;
+}
+.description{
+    color: #534C64;
+    line-height: 2rem;
+}
+.btn-primery{
+    background: var(--primary-color);
+    color:white;
+    padding:20px 40px;
+    font-size: 20px;
+    border:none;
+    border-radius: 35px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.btn-secondary{
+    background: var(--secondary-color);
+    color:white;
+    padding:20px 40px;
+    font-size: 20px;
+    border:none;
+    border-radius: 35px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+
 /* Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px 0;
 }
 
 .logo {
@@ -55,8 +102,7 @@
 .menubar>ul>li {
     list-style: none;
     font-size: 18px;
-    margin: 50px 0;
-    margin-right: 30px;
+    margin: 20px;
 }
 
 .btn-menu {
@@ -70,5 +116,37 @@
     font-size: 18px;
     border: none;
     cursor: pointer;
+
+}
+
+/* Banner styles */
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+/* Media query */
+@media screen and (max-width : 576px) {
+
+    .navbar,
+    .menubar>ul,
+    .banner {
+        flex-direction: column;
+        padding: 20px;
+
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-image img {
+       margin-bottom: 50px;  
+    }
 
 }
