@@ -30,11 +30,16 @@ a {
 }
 
 .top-part,
-.onlinegame,
-.game-category {
+.onlinegame
+ {
     max-width: 1400px;
     margin: 0 auto;
 }
+.game-category {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .subtitle {
     color: #0B0223;
@@ -43,11 +48,12 @@ a {
 }
 
 .main-title {
-
-    background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background: 
+    -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 95px;
+    background-clip: transparent;
 }
 
 .title {
@@ -59,6 +65,7 @@ a {
     background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: transparent;
 }
 
 .description {
@@ -76,7 +83,7 @@ a {
     border-radius: 35px;
     margin-top: 20px;
     margin-right: 20px;
-    
+
 }
 
 
@@ -310,12 +317,11 @@ a {
     margin: 0 auto;
 }
 
-.footer-icon
-{
-display: grid;
-grid-template-columns: repeat(6, 1fr);
-max-width: 500px;
-margin: 0 auto;
+.footer-icon {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .footer-links li,
@@ -374,7 +380,7 @@ margin: 0 auto;
 
     .btn-primery,
     .btn-secondary {
-        margin-bottom: 10px;
+        margin-bottom: 10px 0;
     }
 
     .banner-image>img {
@@ -504,7 +510,9 @@ margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
         font-size: 12px;
     }
-    .text-content h2,.text-content p{
+
+    .text-content h2,
+    .text-content p {
         text-align: center;
         margin-top: 50px;
     }
